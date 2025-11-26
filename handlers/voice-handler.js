@@ -15,7 +15,7 @@ exports.handler = function(context, event, callback) {
     numDigits: 1,
     timeout: 10
   });
-  gather.say('Press 1 to schedule an appointment. Press 2 to cancel an existing appointment. Press 3 to receive an appointment reminder.', { voice: 'Polly.Joanna' });
+  gather.say('Press 1 to schedule a doctor appointment. Press 2 to cancel an existing appointment. Press 3 to receive an appointment reminder.', { voice: 'Polly.Joanna' });
 
   twiml.say('Thank you. Goodbye!', { voice: 'Polly.Joanna' });
   twiml.hangup();
